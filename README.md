@@ -2,6 +2,14 @@
 
 **Project Goal:** Develop a robust time-series forecasting pipeline to predict hourly electricity demand, optimizing for grid reliability by benchmarking statistical models against legacy forecasting systems ("Prevista" and "Programada").
 
+## Data Source
+The dataset used in this project is the **Energy Demand in Spain** dataset, sourced from Kaggle: [Energy Demand in Spain](https://www.kaggle.com/datasets/paalfer96/energy-demand-in-spain). 
+
+It contains hourly electricity demand data (MW) from the Spanish electricity grid, including:
+* **Real:** The actual observed demand.
+* **Prevista:** The initial forecast provided by the grid operator.
+* **Programada:** The scheduled energy demand.
+
 ## Key Results & Best Model Performance
 The **ARIMA** model was selected as the optimal choice due to its superior ability to capture the complex autocorrelation structure and seasonal fluctuations of hourly demand, outperforming both simpler linear models and the existing "Prevista" benchmark.
 
@@ -33,6 +41,5 @@ This project executes an end-to-end data science pipeline in R, utilizing the `f
 
 ## Repository Contents
 * `EnergyDemad.qmd`: The primary analysis file containing the full R implementation.
-* `Demand_data.csv`: The raw hourly demand dataset.
 * `README.md`: Project documentation and summary.
 * `.gitignore`: Configured to exclude R-specific environment and cache files.
